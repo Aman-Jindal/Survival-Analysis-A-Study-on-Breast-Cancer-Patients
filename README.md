@@ -3,24 +3,28 @@
 
 ## Introduction
 
-In this report you will study a detailed statistical analysis of a [dataset](). This dataset is quite famous, it outlines the quality
-of wine based on certain attributes. There are two types of wines given here, red and white. There are different number of total observations. We will study each type of wine each separately. According to the source of the dataset this can be viewed as classification or regression. The classes are ordered and not balanced (e.g. there are munch more normal wines than excellent or poor ones).
-
-Number of Instances: red wine - 1599; white wine - 4898.
-Number of Attributes: 11 + output attribute.
-
-The reasons why I am analyzing this dataset are:
-
-* To apply and test my recently acquired statistics skills.
-* To educate you and myself about the wine characterstics and which are the most important characterstics that makes a good wine.
+In this report you will study a detailed statistical analysis of a [dataset](). This dataset The dataset contains cases from a study that was conducted between 1958 and 1970 at the University of Chicago's Billings Hospital on the survival of patients who had undergone surgery for breast cancer. 
+Number of Instances: 306
+Number of Attributes: 4 (including the class attribute)
+Attribute Information:
+   1. Age of patient at time of operation (numerical)
+   2. Patient's year of operation (year - 1900, numerical)
+   3. Number of positive axillary nodes detected (numerical)
+   4. Survival status (class attribute)
+         1 = the patient survived 5 years or longer
+         2 = the patient died within 5 year.
+         
+The reasons why I am analyzing this dataset:
+* To apply and test my recently acquired knowledge of statistics.
 * Most Importantly, its gonna be fun and educational.
 
 ## Research Question and Hypothesis
 
-My research answer the question: Which of the variables affect the quality of wine and if they do are they statistically significant? To answer this question I will identify the variables which are highly correlated with the dependent variable. So, the _null_ and _alternate_ hypothesis goes like this:   
-
-H<sub>o</sub>: There are no variables which affect the wine quality.
-H<sub>a</sub>: There are significant number of variables which affect the wine quality.
+Now we have the information about the dataset, we begin with the assumption that the sample we have is able to fairly approximate the population. That means we have sufficiently large value on n(no. of instances). Our job is to see:
+* Combined effect of each variable on the survival status.
+* Individual effect of each variable on the survival status.
+H<sub>o</sub>: There are no variables which affect the survival status.
+H<sub>a</sub>: There are significant number of variables which affect survival status.
 
 ![equation1](http://www.sciweavers.org/upload/Tex2Img_1545144480/render.png)
 
@@ -28,4 +32,6 @@ H<sub>a</sub>: There are significant number of variables which affect the wine q
 
 ## Experiment Design
 
-I will conduct a Multiple Regression Test to identify which variable are significantly correlated with dependent variable. I choose this test because there are lot of variables in this test and it will time consuming to do tests like t-test, Linear Regression with two variable with two samples or analysis of variance with 2 or more samples(In Anova we take all the variables at once but it will be difficult to conclude which are significant). Also, we can't conduct z-test and Chi-squared goodness of fit because for z-test we should have population data and for chi-squared we should have nominal(categorical) data. Multiple Regression test will be a best choice in this case. However, we can't visualize the data as there are so many variables but we can interpret the coefficients associated with each variable and their corresponding p-value. We will use the _Microsoft Excel_ to do this. 
+I will fit a Logistic Regression Model to identify which variable are significantly correlated with dependent variable. I choose this test because other test like t-test and ANOVA are done to analyze two samples or more than 2 samples. Also, we can't conduct z-test and Chi-squared goodness of fit because for z-test we should have population data and for chi-squared we should have nominal(categorical) data. Multiple Regression test is done when your dependent variable is continous so Logistic Regression is our best choice in this case. We will use the _Microsoft Excel_ to do this. The step by step process is given in this notebook.
+
+## Result
