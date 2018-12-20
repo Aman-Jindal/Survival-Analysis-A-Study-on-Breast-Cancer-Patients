@@ -28,11 +28,11 @@ Now we have the information about the dataset, we begin with the assumption that
 H<sub>o</sub>: There are no variables which affect the survival status.
 H<sub>a</sub>: There are significant number of variables which affect survival status.
 
-![equation1]()
+![equation1](https://github.com/Aman-Jindal/Statistical-Analysis/blob/master/images/eq1.png)
 
-![equation2]()
+![equation2](https://github.com/Aman-Jindal/Statistical-Analysis/blob/master/images/eq2.png)
 
-Here ![mu]() represents the number of independent variable.
+Here ![mu](https://github.com/Aman-Jindal/Statistical-Analysis/blob/master/images/mu.png) represents the number of independent variable.
 
 ## Experiment Design
 
@@ -46,7 +46,7 @@ The step by step process is given in this notebook.
 
 ### Descriptive Statistics
 
-![table1]()
+![table1](https://github.com/Aman-Jindal/Statistical-Analysis/blob/master/images/descriptive_result.jpg)
 
 ### Inferential Statistics
 
