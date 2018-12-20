@@ -40,7 +40,7 @@ Let's see what are type(measurement scale) of independent and dependent variable
 
 I choose this test because other test like t-test and ANOVA are done to analyze two samples or more than 2 samples. Also, we can't conduct z-test and Chi-squared goodness of fit because for z-test we should have population data and for chi-squared we should have nominal(categorical) data. Multiple Regression test is done when your dependent variable is continous so Logistic Regression is our best choice in this case. We will use the _Microsoft Excel_ to do this.
 
-**The step by step process is given in this [notebook]()**.
+**The step by step process is given in this [notebook](https://nbviewer.jupyter.org/github/Aman-Jindal/Statistical-Analysis/blob/master/Analysis.ipynb)**.
 
 ## Result
 
